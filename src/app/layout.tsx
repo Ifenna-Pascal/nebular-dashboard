@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import NavBar from "./components/navbar";
+import type { Metadata } from 'next';
+import './globals.css';
+import NavBar from './components/navbar';
 
 export const metadata: Metadata = {
-  title: "Nebular",
-  description: "Dasboard",
+  title: 'Nebular',
+  description: 'Dasboard',
 };
 
 export default function RootLayout({
@@ -17,9 +17,7 @@ export default function RootLayout({
       <body className="bg-dark-200">
         <NavBar />
 
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
       </body>
     </html>
   );

@@ -1,12 +1,12 @@
-import React, { FC } from 'react'
-import { IButton } from './type'
+import React, { FC } from 'react';
+import { IButton } from './type';
 
-const Button:FC<IButton> = ({styles, children, ...props}) => {
+const Button: FC<IButton> = ({ styles, children, ...props }) => {
   return (
     <button className={styles} {...props}>
       {children}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
