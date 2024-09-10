@@ -1,6 +1,7 @@
+import BalanceOverview from "./sections/home/balance-overview";
 
 export default function Home() {
-  return (
-    <div></div>
-  );
+  return <div>
+    <BalanceOverview />
+  </div>;
 }
