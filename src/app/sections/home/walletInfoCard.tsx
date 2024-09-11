@@ -12,8 +12,8 @@ const WalletInfoCard = ({ text, value, styles }: IWalletCard) => {
         <Image
           src={assets.ethIcon}
           alt="eth-icon"
-          width={40}
-          className="w-[40px] mr-3"
+          width={35}
+          className="w-[35px] mr-3"
         />
         <span className="font-montserrat text-white text-[16px]">{text}</span>
       </div>

@@ -15,7 +15,7 @@ const BalanceOverview = () => {
           src={assets.arrowDownIcon}
           alt="arrow-down"
           width={15}
-          className="w-[15px] ml-2 mt-2"
+          className="w-[15px] cursor-pointer ml-2 mt-2"
         />
       </div>
       <div className="mt-10 flex w-full justify-between items-center">

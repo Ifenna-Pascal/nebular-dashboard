@@ -17,7 +17,7 @@ const WalletInfoCardApy: FC<IWalletAPY> = ({ text, apy, value, styles }) => {
             width={24}
             className="w-[24px]"
           />
-          <span className="text-light-70 ml-2 font-montserrat font-semibold">
+          <span className="text-light-70 ml-2 text-[20px] font-montserrat font-semibold">
             ${value}
           </span>
         </div>
