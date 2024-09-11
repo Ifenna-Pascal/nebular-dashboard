@@ -33,6 +33,7 @@ const config: Config = {
         'primary-gradient': 'linear-gradient(to right, #5356E0, #6868AE)',
         'dark-gradient':
           'linear-gradient(to bottom, #01051000 0%, #010510 100%)',
+        'table-gradient': 'linear-gradient(to right #302E2E 100%, #6666665C 36%)'
       },
     },
   },
