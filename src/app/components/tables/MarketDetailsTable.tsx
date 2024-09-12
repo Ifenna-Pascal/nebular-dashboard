@@ -11,8 +11,7 @@ import {
   YAxis,
   ResponsiveContainer,
 } from 'recharts';
-import Button from '@/app/ui/button';
-import { useState } from 'react';
+// import { useState } from 'react';
 // import Matic from "../marketdetails-component/Matic";
 // import MaticEth from "../marketdetails-component/MaticEth";
 
@@ -26,6 +25,7 @@ const data = [
 
 const MarketDetailsTable = () => {
   // Custom tick component to add margin above X-axis labels
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const CustomizedAxisTick = (props: any) => {
     const { x, y, payload } = props;
     return (
@@ -34,11 +34,11 @@ const MarketDetailsTable = () => {
       </text>
     );
   };
-  const [activeTab, setActiveTab] = useState('matic');
+  // const [activeTab, setActiveTab] = useState('matic');
 
-  const handleTabChange = (tab: 'matic' | 'maticEth') => {
-    setActiveTab(tab);
-  };
+  // const handleTabChange = (tab: 'matic' | 'maticEth') => {
+  //   setActiveTab(tab);
+  // };
   return (
     <div className=" py-6  mt-8 flex flex-col ">
       {/** supply */}

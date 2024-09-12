@@ -82,12 +82,13 @@ const NavBar = () => {
         </div>
       </div>
       {open && (
-        <div className="lg:hidden py-6 flex min-h-[90vh] flex-col">
+        <div className="lg:hidden py-6 flex z-50 min-h-[90vh] flex-col">
           <div className="border-b border-[#FFFFFF4D] pb-3 px-4">
             <span className="font-montserrat text-light-50 tpx]">Menu</span>
           </div>{' '}
           {navLinks.map((link, index) => (
             <div
+            onClick={() => setOpen(false)}
               key={index}
               className="border border-b py-6 px-4 border-light-50"
             >

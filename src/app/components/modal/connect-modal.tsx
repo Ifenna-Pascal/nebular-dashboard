@@ -37,7 +37,7 @@ const WalletConnectModal = ({
   onWalletSelect: () => void;
 }) => {
   return (
-    <div className="border border-[#FFFFFF66] min-h-[300px]  rounded-[30px] lg:rounded-[50px]  mx-auto  lg:w-[550px]  px-0 md:px-0 bg-[#FFFFFF]">
+    <div className="border border-[#FFFFFF66] min-h-[300px]  rounded-[30px] lg:rounded-[50px] w-[90%] mx-auto  lg:w-[550px]  px-0 md:px-0 bg-[#FFFFFF]">
       <div className="w-full py-1 lg:py-4 relative">
         <MdOutlineCancel
           onClick={close}

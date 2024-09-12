@@ -1,14 +1,16 @@
 import Image from 'next/image';
 import {  singleMarketData } from '../../__mockdata__/market';
 import { assets } from '@/assets';
-import { GoArrowLeft } from 'react-icons/go';
+// import { GoArrowLeft } from 'react-icons/go';
 import { IoArrowBack } from "react-icons/io5";
-import Button from '@/app/ui/button';
+// import Button from '@/app/ui/button';
 
 import MarketDetailsTable from '@/app/components/tables/MarketDetailsTable';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const MarketDetailsPage = ({ params }: { params: any }) => {
   const marketId = params?.id;
+  console.log(marketId);
   
   return (
     <div className="max-w-[2000px] mx-auto">
