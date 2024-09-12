@@ -40,3 +40,34 @@
     filter: blur(150px);
   }
 }
+
+.progress-circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.progress-circle-background,
+.progress-circle-progress {
+  fill: none;
+  stroke-linecap: round;
+}
+
+.progress-circle-background {
+  stroke: #5457DC66;
+}
+
+.progress-circle-progress {
+  stroke: #5457DC;
+  transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+.progress-circle-text {
+  font-size: 14px;
+  fill: #FFF;
+
+  font-family: Arial, sans-serif;
+}
+

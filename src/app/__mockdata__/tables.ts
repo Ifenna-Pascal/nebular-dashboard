@@ -5,46 +5,46 @@ export const marketTable = [
     icon: assets.ethIcon,
     name: 'USDT',
     collateral: '$513.854',
-    tvl: '29.3M',
-    mcr: '150%',
+    tvl: '2.4%',
+    mcr: '$513.854',
     apr: '9.50%',
-    details: 'Details',
+    tbr: '$734.47'
   },
   {
     icon: assets.ethIcon,
     name: 'ETH',
     collateral: '$513.854',
-    tvl: '29.3M',
-    mcr: '150%',
+    tvl: '2.4%',
+    mcr: '$513.854',
     apr: '9.50%',
-    details: 'Details',
+    tbr: '$734.47'
   },
   {
     icon: assets.ethIcon,
     name: 'BTC',
     collateral: '$513.854',
-    tvl: '29.3M',
-    mcr: '190%',
+    tvl: '2.4%',
+    mcr: '$513.854',
     apr: '9.50%',
-    details: 'Details',
+    tbr: '$734.47'
   },
   {
     icon: assets.ethIcon,
     name: 'BASE',
     collateral: '$513.854',
-    tvl: '29.3M',
-    mcr: '150%',
+    tvl: '2.4%',
+    mcr: '$513.854',
     apr: '9.50%',
-    details: 'Details',
+    tbr: '$734.47'
   },
   {
     icon: assets.ethIcon,
     name: 'BNB',
     collateral: '$513.854',
-    tvl: '29.3M',
-    mcr: '150%',
+    tvl: '2.4%',
+    mcr: '$513.854',
     apr: '9.50%',
-    details: 'Details',
+    tbr: '$734.47'
   },
 ];
 
