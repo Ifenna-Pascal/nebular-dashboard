@@ -15,7 +15,7 @@ const Table = () => {
           <h3 className="text-white mt-6 text-[14px] md:text-[25px] xl:text-[30px] font-sora font-semibold">
             Market
           </h3>
-          <div className="  relative bg-[#6767B033] bg-opacity-20 flex items-center border border-white border-opacity-30 p-3 mt-8   rounded-[10px] ">
+          <div className="  relative bg-[#6767B033] bg-opacity-20 flex items-center border border-white border-opacity-10 p-3 mt-8   rounded-[10px] ">
             <Image
               src={assets.searchIcon}
               width={18}

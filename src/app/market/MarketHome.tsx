@@ -41,7 +41,7 @@ const MarketHome = () => {
             </div>
 
             <div className="">
-              <button className=" placeholder:text-light-200 bg-[#FFFFFF0D] p-3 text-white text-opacity-60 border border-white border-opacity-30 lg:h-[45px] rounded-[5px]  focus:outline-none font-montserrat text-light-200 lg:text-[10px] xl:text-[14px]">
+              <button className=" placeholder:text-light-200 bg-[#FFFFFF0D] p-3 text-white text-opacity-60 border border-white border-opacity-10 lg:h-[45px] rounded-[5px]  focus:outline-none font-montserrat text-light-200 lg:text-[10px] xl:text-[14px]">
                 Veiw transaction
               </button>
             </div>
@@ -50,34 +50,34 @@ const MarketHome = () => {
         {/** mobile version */}
         <div className="lg:hidden flex flex-col gap-2 mt-2 md:mt-0">
           <div className="flex justify-between items-center ">
-            <div className="w-[169px] md:w-[60%] h-[42px] md:h-[60px] flex  items-center rounded-md bg-[#013B2A] justify-between px-4 md:px-6">
+            <div className="w-[169px] md:w-[60%] h-[42px] md:h-[60px] flex  items-center rounded-md bg-[#FFFFFF1A] justify-between px-4 md:px-6">
               <div className="flex-col">
                 <div className="text-[6px] md:text-[10px] text-white">
-                  Total Market Size
+                Total Market Size (TVL)
                 </div>
                 <div className="text-[8px] md:text-[12px] text-white">
-                  <span className="text-white text-opacity-70  font-semibold">
-                    $
+                  <span className="text-white text-opacity-70 ml-3  font-semibold">
+                  42,063.05
                   </span>
-                  10.54B
+                 
                 </div>
               </div>
               <div className="flex-col">
-                <div className=" text-[6px] md:text-[10px] text-white">
-                  Total Available
+                <div className=" text-[6px] md:text-[10px] ml-2 text-white">
+                Earning
                 </div>
                 <div className="text-[8px] md:text-[12px] text-white">
                   <span className="text-white text-opacity-70  font-semibold">
-                    $
+                  $797.61M
                   </span>
-                  5.64B
+                  
                 </div>
               </div>
             </div>
           </div>
 
           <div className="flex justify-between gap-2 items-center">
-            <div className="w-[169px] md:w-[60%] h-[42px] md:h-[60px] flex  items-center rounded-md bg-[#013B2A] justify-between px-4 md:px-6">
+            <div className="w-[169px] md:w-[60%] h-[42px] md:h-[60px] flex  items-center rounded-md bg-[#FFFFFF1A] justify-between px-4 md:px-6">
               <div className="flex-col">
                 <div className="text-[6px] md:text-[10px] text-white">
                   Total Borrows
