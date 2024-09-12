@@ -29,13 +29,14 @@ const BalanceOverview = () => {
 
   const Header = () => (
     <div className="p-6 lg:p-12 bg-cover bg-hero-bg bg-center bg-no-repeat bg-opacity-40">
-       <h1 className='lg:hidden font-montserrat text-[14px]/[17px] text-white text-opacity-80 font-bold'>Dashboard</h1>
+      <h1 className="lg:hidden font-montserrat text-[14px]/[17px] text-white text-opacity-80 font-bold">
+        Dashboard
+      </h1>
       <div className="flex items-center  ">
-       
         <h1 className="font-montserrat text-[22px]/[26px] lg:text-[48px] text-white font-bold mt-3 lg:mt-0">
           Ethereum
         </h1>
-      
+
         <Image
           src={assets.arrowDownIcon}
           alt="arrow-down"
@@ -44,8 +45,16 @@ const BalanceOverview = () => {
         />
       </div>
       <div className=" mt-4 lg:mt-10 flex w-full justify-between items-center">
-        <WalletInfoCard styles="h-[40px] lg:h-[86px]" text="Supply ETH" value="3" />
-        <WalletInfoCard styles="h-[40px] lg:h-[86px]" text="Borrow ETH" value="2" />
+        <WalletInfoCard
+          styles="h-[40px] lg:h-[86px]"
+          text="Supply ETH"
+          value="3"
+        />
+        <WalletInfoCard
+          styles="h-[40px] lg:h-[86px]"
+          text="Borrow ETH"
+          value="2"
+        />
       </div>
       <div className="mt-6 flex w-full justify-between items-center">
         <WalletInfoCardApy
@@ -85,12 +94,10 @@ const BalanceOverview = () => {
             {activeTab === 'supply' ? <SupplyTable /> : <BorrowTable />}
           </div>
         </div> */}
-        <div 
+        <div
         // className="hidden lg:flex justify-between gap-2 lg:gap-7 xl:gap-14  px-4 md:px-10 mx-auto"
         >
-          
-
-          <AssetsTable/>
+          <AssetsTable />
         </div>
       </>
     );
@@ -114,14 +121,16 @@ const BalanceOverview = () => {
           Please, connect your wallet
         </p>
         <p className="w-[80%] md:w-full text-[10px]/[12px] md:text-[18px]/[20px] text-center lg:text-[20px]/[38px] mt-2 md:mt-4 lg:mt-0 text-white text-opacity-70 font-normal font-inter mb-6 xl:text-[24px]/[42px]">
-        Please connect your wallet to see your supplies, borrowings, and assets
+          Please connect your wallet to see your supplies, borrowings, and
+          assets
         </p>
-        
-        <Button styles="bg-primary-gradient  items-center justify-center mb-4 font-inter text-[10px]  md:text-[16px] font-semibold text-white w-[120px] md:w-[168px] h-[40px] md:h-[50px]  rounded-[40px] md:rounded-[80px]"
-         onClick={() => setOpen(true)}>
-       
-            Connect Wallet
-          </Button>
+
+        <Button
+          styles="bg-primary-gradient  items-center justify-center mb-4 font-inter text-[10px]  md:text-[16px] font-semibold text-white w-[120px] md:w-[168px] h-[40px] md:h-[50px]  rounded-[40px] md:rounded-[80px]"
+          onClick={() => setOpen(true)}
+        >
+          Connect Wallet
+        </Button>
       </div>
 
       <ModalContainer open={open} close={closeModal}>

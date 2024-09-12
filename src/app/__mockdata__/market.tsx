@@ -1,23 +1,21 @@
 // import { images } from "../utilities/images";
 
-import { assets } from "@/assets";
+import { assets } from '@/assets';
 
 export const marketData = [
   {
     title: 'Total Market Size (TVL)',
     amount: '$42,063.05',
- 
-    img: assets.ethIcon
+
+    img: assets.ethIcon,
   },
   {
     title: 'Earning',
     amount: '$797.61M',
- 
   },
   {
     title: 'Borrowing',
     amount: '$797.61M',
- 
   },
   {
     title: 'Collateral',

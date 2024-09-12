@@ -68,7 +68,9 @@ const NavBar = () => {
       {open && (
         <div className="lg:hidden py-6 flex min-h-[90vh] flex-col">
           <div className=" pb-3 px-4 mt-6">
-            <span className="font-montserrat text-light-50 text-[12px]/[12px] font-medium">Menu</span>
+            <span className="font-montserrat text-light-50 text-[12px]/[12px] font-medium">
+              Menu
+            </span>
           </div>{' '}
           {navLinks.map((link, index) => (
             <div

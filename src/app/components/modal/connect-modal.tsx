@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { wallets } from '../../__mockdata__/tables';
 import { assets } from '@/assets';
-import { MdOutlineCancel } from "react-icons/md";
+import { MdOutlineCancel } from 'react-icons/md';
 
 interface IProp {
   img: string;
@@ -15,7 +15,6 @@ const Wallet = ({ img, name, onClick }: IProp) => {
       className="mb-4 lg py-1 lg:py-2 cursor-pointer px-3 flex items-center gap-3 mt-6 bg-[#0000000D] bg-opacity-5 rounded-[15px] shadow-sm max-w-[70%] mx-auto"
       onClick={onClick}
     >
-      
       <Image
         src={img}
         alt="wallet-icon"
@@ -40,25 +39,23 @@ const WalletConnectModal = ({
   return (
     <div className="border border-[#FFFFFF66] min-h-[300px]  rounded-[30px] lg:rounded-[50px] w-[88%] mx-auto md:w-[80%] lg:w-[550px] xl:w-[700px]  px-0 md:px-0 bg-[#FFFFFF]">
       <div className="w-full py-1 lg:py-4 relative">
-       
-        <MdOutlineCancel  className='absolute top-5 lg:top-10 right-20 text-[20px] lg:text-[40px] font-light text-[#00000080] text-opacity-50'/>
-        <div className='flex items-center justify-center mt-10 lg:mt-20 gap-1'>
-        <Image
-          src={assets.wallet}
-          alt="wallet-icon"
-          width={10}
-          height={10}
-          className="w-5 lg:w-8"
-        />
-        <h2 className="font-montserrat text-[13px] md:text-[20px] lg:text-[38px] leading-5 xl:text-[33px]/[54px]  text-[#5457DC] text-center font-medium">
-        Connect Wallet
-        </h2>
+        <MdOutlineCancel className="absolute top-5 lg:top-10 right-20 text-[20px] lg:text-[40px] font-light text-[#00000080] text-opacity-50" />
+        <div className="flex items-center justify-center mt-10 lg:mt-20 gap-1">
+          <Image
+            src={assets.wallet}
+            alt="wallet-icon"
+            width={10}
+            height={10}
+            className="w-5 lg:w-8"
+          />
+          <h2 className="font-montserrat text-[13px] md:text-[20px] lg:text-[38px] leading-5 xl:text-[33px]/[54px]  text-[#5457DC] text-center font-medium">
+            Connect Wallet
+          </h2>
         </div>
-        <div 
-        className='border-[#000000] border-opacity-30 border-t mt-3'
-        >
-          
-          <p className='font-montserrat text-[14px] md:text-[18px] lg:text-[24px]/[42px] text-[#000000] text-opacity-50 text-center mt-2'>Choose a wallet you want to connect to</p>
+        <div className="border-[#000000] border-opacity-30 border-t mt-3">
+          <p className="font-montserrat text-[14px] md:text-[18px] lg:text-[24px]/[42px] text-[#000000] text-opacity-50 text-center mt-2">
+            Choose a wallet you want to connect to
+          </p>
         </div>
       </div>
 
@@ -71,7 +68,7 @@ const WalletConnectModal = ({
         />
       ))}
       <span className="text-black flex items-center justify-center font-inter  pb-6 lg:pb-10 pt-5 py-16 font-medium text-[7px] md:text-[10px] lg:text-[14px] xl:text-[16px]">
-      By connecting, I accept Nebula 
+        By connecting, I accept Nebula
         <p className="text-[#5457DC] ml-2">Terms of Service</p>
       </span>
     </div>

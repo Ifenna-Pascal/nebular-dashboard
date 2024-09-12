@@ -13,22 +13,22 @@ const Table = () => {
       <div className="border border-[#302E2E] bg-gradient-to-b from-[#0303033B] to-[#31324282] shadow-md min-h-[400px] rounded-lg px-8">
         <div className="flex flex-row items-center justify-between px-4 lg:px-6 border-b border-[#302E2E] pb-5">
           <h3 className="text-white mt-6 text-[14px] md:text-[25px] xl:text-[30px] font-sora font-semibold">
-          Market
+            Market
           </h3>
           <div className="  relative bg-[#6767B033] bg-opacity-20 flex items-center border border-white border-opacity-30 p-3 mt-8   rounded-[10px] ">
-              <Image
-                src={assets.searchIcon}
-                width={18}
-                height={18}
-                alt="search-icon"
-                className="absolute left-3"
-              />
-              <input
-                type="text"
-                className="w-full ml-6 bg-transparent placeholder:text-light-200 text-white text-opacity-60 focus:outline-none font-montserrat text-light-200 lg:text-[10px] xl:text-[14px]"
-                placeholder="Search assets name"
-              />
-            </div>
+            <Image
+              src={assets.searchIcon}
+              width={18}
+              height={18}
+              alt="search-icon"
+              className="absolute left-3"
+            />
+            <input
+              type="text"
+              className="w-full ml-6 bg-transparent placeholder:text-light-200 text-white text-opacity-60 focus:outline-none font-montserrat text-light-200 lg:text-[10px] xl:text-[14px]"
+              placeholder="Search assets name"
+            />
+          </div>
         </div>
 
         {/* Desktop Table */}
@@ -151,7 +151,6 @@ const Table = () => {
             </div>
           ))}
         </div>
-
       </div>
     </div>
   );

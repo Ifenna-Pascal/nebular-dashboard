@@ -11,10 +11,10 @@ import sortIcon from '../assets/icons/sort-icon.svg';
 import usdtIcon from './icons/usdt.svg';
 import handburgerIcon from './icons/menu-bar.svg';
 import singlelogo from './images/singlelogo.svg';
-import walletconnet from './icons/wallet-connect.svg'
-import wallet from './icons/wallet.svg'
-import herobg from './images/herobg.svg'
-import searchIcon from'./icons/search-icon.svg'
+import walletconnet from './icons/wallet-connect.svg';
+import wallet from './icons/wallet.svg';
+import herobg from './images/herobg.svg';
+import searchIcon from './icons/search-icon.svg';
 
 export const assets = {
   logo,
@@ -33,5 +33,5 @@ export const assets = {
   walletconnet,
   wallet,
   herobg,
-  searchIcon
+  searchIcon,
 };
