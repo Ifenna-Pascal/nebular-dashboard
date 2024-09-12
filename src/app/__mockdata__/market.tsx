@@ -1,24 +1,27 @@
 // import { images } from "../utilities/images";
 
+import { assets } from "@/assets";
+
 export const marketData = [
   {
-    title: 'Total Market Size',
-    amount: '10.54B',
-    sign: '$',
+    title: 'Total Market Size (TVL)',
+    amount: '$42,063.05',
+ 
+    img: assets.ethIcon
   },
   {
-    title: 'Total Available',
-    amount: '5.64B',
-    sign: '$',
+    title: 'Earning',
+    amount: '$797.61M',
+ 
   },
   {
-    title: 'Total Borrows',
-    amount: '3.19B',
-    sign: '$',
+    title: 'Borrowing',
+    amount: '$797.61M',
+ 
   },
   {
-    title: 'Collateralization',
-    amount: '133.19%',
+    title: 'Collateral',
+    amount: '$1.37B',
   },
 ];
 

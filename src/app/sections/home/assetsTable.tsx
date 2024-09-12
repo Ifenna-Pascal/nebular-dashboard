@@ -4,7 +4,7 @@ import React from 'react';
 
 const AssetsTable = () => {
   return (
-    <div className="px-12 grid grid-cols-2 space-x-12 pb-16">
+    <div className="px-10 grid grid-cols-2 space-x-12 pb-16">
       <AssetTableDisplay
         data={tokenAsssets}
         styles="col-span-1"

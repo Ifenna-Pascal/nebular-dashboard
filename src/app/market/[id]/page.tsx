@@ -11,7 +11,7 @@ const MarketDetailsPage = ({ params }: { params: any }) => {
   console.log(marketId, 'this is the id needed');
   return (
     <div className="max-w-[2000px] mx-auto h-[220vh] md:h-[170vh] lg:h-[80vh] xl:h-[160vh]">
-      <div className=" px-4 md:px-10   bg-[#02120D] font-sora h-[193px] md:h-[280px] lg:h-[250px] xl:h-[300px]   py-[1rem] md:py-[0.5rem]   ">
+      {/* <div className=" px-4 md:px-10   bg-[#02120D] font-sora h-[193px] md:h-[280px] lg:h-[250px] xl:h-[300px]   py-[1rem] md:py-[0.5rem]   ">
         <div className="  flex flex-col  my-auto  ">
           <div className="py-0 md:py-10 flex flex-col md:flex-row gap-3 items-left md:items-center ">
             <Button styles="w-[60px] md:w-[90px] lg:w-[120px] xl:w-[148px] h-[20px] font-sora font-light md:h-[35px] text-white text-opacity-50 border border-white border-opacity-40 lg:h-[45px] xl:h-[57px] text-[5px]/[10px] md:text-[10px] bg-transparent lg:text-[14px] xl:text-[18px]/[27px] rounded-[5px]">
@@ -111,7 +111,7 @@ const MarketDetailsPage = ({ params }: { params: any }) => {
           </div>
         </div>
         <MarketDetailsTable />
-      </div>
+      </div> */}
     </div>
   );
 };

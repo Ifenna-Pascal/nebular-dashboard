@@ -9,6 +9,7 @@ import BorrowTable from '@/app/components/tables/BorrowTable';
 import Button from '@/app/ui/button';
 import WalletConnectModal from '@/app/components/modal/connect-modal';
 import ModalContainer from '@/app/components/modal';
+import AssetsTable from './assetsTable';
 
 const BalanceOverview = () => {
   const [open, setOpen] = useState(false);
@@ -27,21 +28,24 @@ const BalanceOverview = () => {
   };
 
   const Header = () => (
-    <div className="p-12">
-      <div className="flex items-center">
-        <h1 className="font-montserrat text-[48px] text-white font-bold">
+    <div className="p-6 lg:p-12 bg-cover bg-hero-bg bg-center bg-no-repeat bg-opacity-40">
+       <h1 className='lg:hidden font-montserrat text-[14px]/[17px] text-white text-opacity-80 font-bold'>Dashboard</h1>
+      <div className="flex items-center  ">
+       
+        <h1 className="font-montserrat text-[22px]/[26px] lg:text-[48px] text-white font-bold mt-3 lg:mt-0">
           Ethereum
         </h1>
+      
         <Image
           src={assets.arrowDownIcon}
           alt="arrow-down"
           width={15}
-          className="w-[15px] cursor-pointer ml-2 mt-2"
+          className="w-[10px] lg:w-[15px] cursor-pointer ml-2 mt-4 lg:mt-2"
         />
       </div>
-      <div className="mt-10 flex w-full justify-between items-center">
-        <WalletInfoCard styles="lg:h-[86px]" text="Supply ETH" value="3" />
-        <WalletInfoCard styles="lg:h-[86px]" text="Borrow ETH" value="2" />
+      <div className=" mt-4 lg:mt-10 flex w-full justify-between items-center">
+        <WalletInfoCard styles="h-[40px] lg:h-[86px]" text="Supply ETH" value="3" />
+        <WalletInfoCard styles="h-[40px] lg:h-[86px]" text="Borrow ETH" value="2" />
       </div>
       <div className="mt-6 flex w-full justify-between items-center">
         <WalletInfoCardApy
@@ -62,7 +66,7 @@ const BalanceOverview = () => {
     return (
       <>
         <Header />
-        <div className="lg:hidden flex flex-col bg-[#01291D] pt-5 px-4 md:px-10">
+        {/* <div className="lg:hidden flex flex-col bg-[#01291D] pt-5 px-4 md:px-10">
           <div className="flex justify-between bg-[#012016] w-full md:w-[680px] h-[39px] mx-auto shadow-lg">
             <button
               className={`${activeTab === 'supply' ? 'bg-[#01F8AF] text-[#012016] w-full md:w-[341px]' : 'bg-[#012016] w-full md:w-[339px] text-[#01F8AF]'} rounded-[3px]`}
@@ -80,42 +84,44 @@ const BalanceOverview = () => {
           <div className="mt-4">
             {activeTab === 'supply' ? <SupplyTable /> : <BorrowTable />}
           </div>
-        </div>
-        <div className="hidden lg:flex justify-between gap-2 lg:gap-7 xl:gap-14 bg-[#01291D] px-4 md:px-10 mx-auto">
-          <SupplyTable />
-          <BorrowTable />
+        </div> */}
+        <div 
+        // className="hidden lg:flex justify-between gap-2 lg:gap-7 xl:gap-14  px-4 md:px-10 mx-auto"
+        >
+          
+
+          <AssetsTable/>
         </div>
       </>
     );
   }
 
   return (
-    <div className="max-w-[2000px] mx-auto bg-gradient-to-b from-[black] to-[#02120D] h-screen">
+    <div className="max-w-[2000px] mx-auto  h-screen">
       {/* Header Section */}
       <Header />
 
       {/* Main Content */}
-      <div className="flex flex-col bg-[#01291D] py-6 px-2 m-10 rounded-[10px] md:p-10 justify-center items-center">
+      <div className="flex flex-col bg-[#FFFFFF] bg-opacity-5 py-6 px-2 m-10 rounded-[10px]  justify-center items-center">
         <Image
-          src={assets.logo}
+          src={assets.singlelogo}
           width={14}
           height={14}
           alt="search-icon"
-          className="w-[48px] md:w-[75px] lg:w-[100px] xl:w-[136px]"
+          className="w-[48px] md:w-[75px] lg:w-[120px] lg:h-[130px]"
         />
-        <p className="text-[8px]/[12px] md:text-[18px] lg:text-[24px]/[34px] mt-2 text-white font-sora font-medium xl:text-[28px]/[42px]">
+        <p className="text-[10px]/[12px] md:text-[18px] lg:text-[24px]/[34px] mt-6 text-white font-inter font-medium xl:text-[28px]/[42px]">
           Please, connect your wallet
         </p>
-        <p className="w-[80%] md:w-full text-[8px]/[12px] md:text-[18px]/[20px] text-center lg:text-[20px]/[38px] mt-2 md:mt-4 lg:mt-0 text-white text-opacity-70 font-medium font-sora mb-6 xl:text-[28px]/[42px]">
-          Please connect your wallet to see your supplies, borrowings, and open
-          positions.
+        <p className="w-[80%] md:w-full text-[10px]/[12px] md:text-[18px]/[20px] text-center lg:text-[20px]/[38px] mt-2 md:mt-4 lg:mt-0 text-white text-opacity-70 font-normal font-inter mb-6 xl:text-[24px]/[42px]">
+        Please connect your wallet to see your supplies, borrowings, and assets
         </p>
-        <Button
-          styles="w-[65px] md:w-[130px] lg:w-[200px] xl:w-[238px] bg-[#033426] h-[18px] md:h-[50px] lg:h-[60px] xl:h-[70px] rounded-[5px] lg:rounded-[9px] xl:rounded-[10px] text-white text-opacity-70 border-none text-[6px] md:text-[14px] lg:text-[18px] xl:text-[24px]"
-          onClick={() => setOpen(true)}
-        >
-          Connect Wallet
-        </Button>
+        
+        <Button styles="bg-primary-gradient  items-center justify-center mb-4 font-inter text-[10px]  md:text-[16px] font-semibold text-white w-[120px] md:w-[168px] h-[40px] md:h-[50px]  rounded-[40px] md:rounded-[80px]"
+         onClick={() => setOpen(true)}>
+       
+            Connect Wallet
+          </Button>
       </div>
 
       <ModalContainer open={open} close={closeModal}>

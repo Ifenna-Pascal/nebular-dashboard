@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-dark-200 relative">
         <NavBar />
-        <div className='absolute right-0 circle'></div>
+        <div className="absolute right-0 circle"></div>
         <main>{children}</main>
       </body>
     </html>

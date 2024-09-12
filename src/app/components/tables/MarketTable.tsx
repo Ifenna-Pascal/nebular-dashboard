@@ -9,27 +9,31 @@ const Table = () => {
   const router = useRouter();
 
   return (
-    <div className="overflow-x-auto px-4 md:px-10 py-10 bg-[#01291D]">
-      <div className="border border-white border-opacity-10 bg-[#030D0A] shadow-md min-h-[400px] rounded-lg">
-        <div className="flex flex-row items-center justify-between px-4 lg:px-6">
+    <div className="overflow-x-auto px-4 md:px-10 py-10 ">
+      <div className="border border-[#302E2E] bg-gradient-to-b from-[#0303033B] to-[#31324282] shadow-md min-h-[400px] rounded-lg px-8">
+        <div className="flex flex-row items-center justify-between px-4 lg:px-6 border-b border-[#302E2E] pb-5">
           <h3 className="text-white mt-6 text-[14px] md:text-[25px] xl:text-[30px] font-sora font-semibold">
-            Biturbo Market Assets
+          Market
           </h3>
-          <div className="lg:hidden flex items-center mt-6 text-white text-opacity-60 font-sora">
-            <span className="text-[10px]">Hide</span>
-            <Image
-              src={assets.ethIcon}
-              className="ml-2"
-              alt="hide-icon"
-              width={24}
-              height={24}
-            />
-          </div>
+          <div className="  relative bg-[#6767B033] bg-opacity-20 flex items-center border border-white border-opacity-30 p-3 mt-8   rounded-[10px] ">
+              <Image
+                src={assets.searchIcon}
+                width={18}
+                height={18}
+                alt="search-icon"
+                className="absolute left-3"
+              />
+              <input
+                type="text"
+                className="w-full ml-6 bg-transparent placeholder:text-light-200 text-white text-opacity-60 focus:outline-none font-montserrat text-light-200 lg:text-[10px] xl:text-[14px]"
+                placeholder="Search assets name"
+              />
+            </div>
         </div>
 
         {/* Desktop Table */}
         <div className="hidden lg:block">
-          <table className="min-w-full divide-y  divide-[#FFFFFF1A]">
+          <table className="min-w-full  ">
             <thead className="bg-transparent">
               <tr className="h-[85px]">
                 {[
@@ -46,27 +50,27 @@ const Table = () => {
                     <span className="flex items-center">
                       {header}
                       <Image
-                        src={assets.ethIcon}
-                        className="ml-2 w-[10px] xl:w-3"
+                        src={assets.sortIcon}
+                        className="ml-2  "
                         alt="sort-icon"
-                        width={16}
-                        height={16}
+                        width={10}
+                        height={10}
                       />
                     </span>
                   </th>
                 ))}
               </tr>
             </thead>
-            <tbody className="divide-y divide-[#FFFFFF1A]">
+            <tbody className="">
               {marketTable.map((data, index) => (
                 <tr
                   key={index}
                   className="hover:bg-[#FFFFFF0D] cursor-pointer"
-                  onClick={() => router.push(`/dashboard/market/${index}`)}
+                  onClick={() => router.push(`/market/${index}`)}
                 >
-                  <td className="px-6 py-5 flex items-center">
+                  <td className="px-6 py-10 flex items-center">
                     <Image
-                      src={data.icon}
+                      src={assets.usdtIcon}
                       alt="coin-icon"
                       width={24}
                       height={24}
@@ -136,7 +140,7 @@ const Table = () => {
                 </div>
               ))}
               <button
-                onClick={() => router.push(`/dashboard/market/${index}`)}
+                onClick={() => router.push(`/market/${index}`)}
                 className="bg-[#FFFFFF0D] text-white text-opacity-60 border mt-4 border-white border-opacity-20 w-full h-[39px] rounded"
               >
                 {data.details}
@@ -148,15 +152,6 @@ const Table = () => {
           ))}
         </div>
 
-        <div className="flex items-center gap-2 border-t border-[#FFFFFF1A] py-8 px-6">
-          <h3 className="text-white text-opacity-70 text-[14px] md:text-[18px] xl:text-[26px] font-sora font-normal">
-            Show Frozen or Paused Assets
-          </h3>
-          <div className="flex space-x-1">
-            <div className="w-6 h-5 bg-white rounded-lg"></div>
-            <div className="w-6 h-5 bg-[#01291D] rounded-r-lg"></div>
-          </div>
-        </div>
       </div>
     </div>
   );
