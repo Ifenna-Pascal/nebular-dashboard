@@ -15,7 +15,9 @@ const WalletInfoCard = ({ text, value, styles }: IWalletCard) => {
           width={35}
           className="w-[25px] md:w-[35px] mr-3"
         />
-        <span className="font-montserrat text-white text-[14px] md:text-[16px]">{text}</span>
+        <span className="font-montserrat text-white text-[14px] md:text-[16px]">
+          {text}
+        </span>
       </div>
       <div className="md:w-[36px] w-[30px] text-white text-[14px] bg-light-15 flex items-center justify-center h-[30px] md:h-[36px] rounded-full">
         {value}

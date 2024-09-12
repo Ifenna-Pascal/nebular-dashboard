@@ -19,12 +19,12 @@ const NavBar = () => {
       <div className="border-b border-light-50 flex px-6 lg:px-12 items-center justify-between top-0 h-[75px]">
         <div className="flex items-center justify-between">
           <Link href={'/'}>
-          <Image
-            src={assets.logo}
-            alt="logo-image"
-            width={180}
-            className="w-[145px] lg:w-[180px] mr-20"
-          />
+            <Image
+              src={assets.logo}
+              alt="logo-image"
+              width={180}
+              className="w-[145px] lg:w-[180px] mr-20"
+            />
           </Link>
           <ul className="lg:flex hidden items-center justify-center gap-x-16">
             {navLinks.map((link) => {

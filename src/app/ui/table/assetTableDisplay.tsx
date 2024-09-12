@@ -24,7 +24,7 @@ const AssetTableDisplay: FC<IAssetTable> = ({
               {colmumHeads.map((title, index) => (
                 <th
                   key={index}
-                  scope="col"   
+                  scope="col"
                   className=" text-center text-[14px] md:text-[18px]/[21px]  text-light-200 font-semibold"
                 >
                   <div

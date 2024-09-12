@@ -27,7 +27,7 @@ const BalanceOverview = () => {
           apy="-------"
           text="Your Suppply Balance"
           value="0.00"
-          styles='mb-4'
+          styles="mb-4"
         />
         <WalletInfoCardApy
           apy="-------"
