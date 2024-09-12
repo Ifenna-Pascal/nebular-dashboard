@@ -28,7 +28,7 @@ const BalanceOverview = () => {
   };
 
   const Header = () => (
-    <div className="p-6 lg:p-12 bg-cover bg-hero-bg bg-center bg-no-repeat bg-opacity-40">
+    <div className="p-6 lg:p-12 ">
       <h1 className="lg:hidden font-montserrat text-[14px]/[17px] text-white text-opacity-80 font-bold">
         Dashboard
       </h1>
