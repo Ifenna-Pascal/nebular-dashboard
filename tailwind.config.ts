@@ -35,6 +35,7 @@ const config: Config = {
           'linear-gradient(to bottom, #01051000 0%, #010510 100%)',
         'table-gradient':
           'linear-gradient(to right #302E2E 100%, #6666665C 36%)',
+        'hero-bg': "url('../assets/images/herobg.svg')",
       },
     },
   },

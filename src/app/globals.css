@@ -11,6 +11,27 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'sora';
+  src: url(./fonts/sora-3/Sora-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'sora';
+  src: url(./fonts/sora-3/Sora-Light.ttf) format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'sora';
+  src: url(./fonts/sora-3/Sora-Bold.ttf) format('truetype');
+  font-weight: 700;
+}
+
+.font-sora {
+  font-family: 'sora', sans-serif;
+}
+
 @layer utilities {
   .circle {
     width: 90%;

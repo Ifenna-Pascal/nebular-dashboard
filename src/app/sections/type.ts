@@ -6,4 +6,5 @@ export interface IWalletCard {
 
 export interface IWalletAPY extends IWalletCard {
   apy: string;
+  net: string;
 }
