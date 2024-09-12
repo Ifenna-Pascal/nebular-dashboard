@@ -61,11 +61,13 @@ const BalanceOverview = () => {
           apy="-------"
           text="Your Suppply Balance"
           value="0.00"
+          net="Net Apy"
         />
         <WalletInfoCardApy
           apy="-------"
           text="Your Borrow Balance"
           value="0.00"
+          net="Net Apy"
         />
       </div>
     </div>
@@ -75,27 +77,9 @@ const BalanceOverview = () => {
     return (
       <>
         <Header />
-        {/* <div className="lg:hidden flex flex-col bg-[#01291D] pt-5 px-4 md:px-10">
-          <div className="flex justify-between bg-[#012016] w-full md:w-[680px] h-[39px] mx-auto shadow-lg">
-            <button
-              className={`${activeTab === 'supply' ? 'bg-[#01F8AF] text-[#012016] w-full md:w-[341px]' : 'bg-[#012016] w-full md:w-[339px] text-[#01F8AF]'} rounded-[3px]`}
-              onClick={() => handleTabChange('supply')}
-            >
-              Supply
-            </button>
-            <button
-              className={`${activeTab === 'borrow' ? 'bg-[#01F8AF] text-[#012016] w-full md:w-[341px]' : 'bg-[#012016] w-full md:w-[339px] text-[#01F8AF]'} rounded-[3px]`}
-              onClick={() => handleTabChange('borrow')}
-            >
-              Borrow
-            </button>
-          </div>
-          <div className="mt-4">
-            {activeTab === 'supply' ? <SupplyTable /> : <BorrowTable />}
-          </div>
-        </div> */}
+       
         <div
-        // className="hidden lg:flex justify-between gap-2 lg:gap-7 xl:gap-14  px-4 md:px-10 mx-auto"
+        
         >
           <AssetsTable />
         </div>
