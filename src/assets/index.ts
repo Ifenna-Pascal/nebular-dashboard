@@ -7,9 +7,15 @@ import ethIcon from './icons/eth-icon.svg';
 import metamask from './icons/metamask.svg';
 import coinbase from './icons/coinbase.svg';
 import phantom from './icons/phantom.svg';
+import sortIcon from '../assets/icons/sort-icon.svg';
+import usdtIcon from './icons/usdt.svg';
+import handburgerIcon from './icons/menu-bar.svg'
 
 export const assets = {
   logo,
+  usdtIcon,
+  sortIcon,
+  handburgerIcon,
   arrowDownIcon,
   logoMark,
   ethNav,
