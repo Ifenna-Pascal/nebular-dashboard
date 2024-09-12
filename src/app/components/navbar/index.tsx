@@ -17,13 +17,13 @@ const NavBar = () => {
   const [walletConnected, setWalletConnected] = useState(false);
 
   console.log(walletConnected);
-  
+
   const closeModal = () => setOpen(false);
   const handleWalletSelect = () => {
     setWalletConnected(true);
     closeModal();
   };
-  const toggle = () => setOpen(!open);  
+  const toggle = () => setOpen(!open);
 
   return (
     <div className="bg-dark-200 top-0 sticky">
@@ -66,7 +66,10 @@ const NavBar = () => {
               className="w-[15px] lg:w-[18px]"
             />
           </Button>
-          <Button onClick={() => setModal(true)} styles="bg-primary-gradient lg:flex hidden items-center justify-center  font-inter text-[14px] font-semibold text-white w-[160px] h-[43px] rounded-[80px]">
+          <Button
+            onClick={() => setModal(true)}
+            styles="bg-primary-gradient lg:flex hidden items-center justify-center  font-inter text-[14px] font-semibold text-white w-[160px] h-[43px] rounded-[80px]"
+          >
             Connect Wallet
           </Button>
           <Image
@@ -98,8 +101,8 @@ const NavBar = () => {
           ))}
         </div>
       )}
-      
-        <ModalContainer open={modal} close={closeModal}>
+
+      <ModalContainer open={modal} close={closeModal}>
         <WalletConnectModal
           close={() => setModal(false)}
           onWalletSelect={handleWalletSelect}

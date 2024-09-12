@@ -7,7 +7,7 @@ import WalletInfoCardApy from './walletInfoCardApy';
 
 const BalanceOverview = () => {
   return (
-       <div className="p-6 lg:p-12">
+    <div className="p-6 lg:p-12">
       <h1 className="hidden font-montserrat text-[14px]/[17px] text-white text-opacity-80 font-bold">
         Dashboard
       </h1>
@@ -41,14 +41,14 @@ const BalanceOverview = () => {
           text="Your Suppply Balance"
           value="0.00"
           net="Net Apy"
-          styles='w-full mb-3'
+          styles="w-full mb-3"
         />
         <WalletInfoCardApy
           apy="-------"
           text="Your Borrow Balance"
           value="0.00"
           net="Net Apy"
-          styles='w-full'
+          styles="w-full"
         />
       </div>
     </div>

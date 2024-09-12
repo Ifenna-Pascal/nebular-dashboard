@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { useState } from 'react';
 import AssetsTable from './sections/home/assetsTable';
 import BalanceOverview from './sections/home/balance-overview';
@@ -18,13 +18,8 @@ export default function Home() {
   return (
     <div className="flex  pb-8 flex-col">
       <BalanceOverview />
-      {
-        walletConnected ? 
-      <AssetsTable />
-        : 
-        <EmptyState  setOpen={setOpen} />
-      }
-       <ModalContainer open={open} close={closeModal}>
+      {walletConnected ? <AssetsTable /> : <EmptyState setOpen={setOpen} />}
+      <ModalContainer open={open} close={closeModal}>
         <WalletConnectModal
           close={() => setOpen(false)}
           onWalletSelect={handleWalletSelect}

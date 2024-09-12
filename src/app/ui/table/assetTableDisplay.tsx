@@ -37,7 +37,7 @@ const AssetTableDisplay: FC<IAssetTable> = ({
                       <Image
                         src={assets.sortIcon}
                         className="ml-2 hidden md:flex  w-[10px] h-[10px]"
-                        alt="sort-icon" 
+                        alt="sort-icon"
                         width={10}
                       />
                     )}

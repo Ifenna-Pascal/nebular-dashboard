@@ -5,7 +5,7 @@ import { marketTable } from '../../__mockdata__/tables';
 import { assets } from '@/assets';
 import { useRouter } from 'next/navigation';
 
-const  Table = () => {
+const Table = () => {
   const router = useRouter();
 
   return (
