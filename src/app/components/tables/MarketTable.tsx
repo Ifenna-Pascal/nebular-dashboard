@@ -32,7 +32,6 @@ const Table = () => {
           </div>
         </div>
 
-       
         <div className="overflow-auto">
           <table className="min-w-[550px] lg:min-w-full  ">
             <thead className="">
@@ -66,7 +65,7 @@ const Table = () => {
               {marketTable.map((data, index) => (
                 <tr
                   key={index}
-                  className=" bg-[#FFFFFF0D]  hover:bg-[#FFFFFF0D] cursor-pointer mb-5 "
+                  className="   hover:bg-[#FFFFFF0D] cursor-pointer mb-5 "
                   onClick={() => router.push(`/market/${index}`)}
                 >
                   <td className="lg:px-6 py-10 flex items-center">
@@ -75,7 +74,7 @@ const Table = () => {
                       alt="coin-icon"
                       width={24}
                       height={24}
-                      className='w-5 '
+                      className="w-5 "
                     />
                     <span className="ml-3 text-[8px] md:text-[14px] font-montserrat xl:text-[18px] text-white">
                       {data.name}
@@ -103,7 +102,7 @@ const Table = () => {
             </tbody>
           </table>
         </div>
-        </div>
+      </div>
     </div>
   );
 };

@@ -77,10 +77,8 @@ const BalanceOverview = () => {
     return (
       <>
         <Header />
-       
-        <div
-        
-        >
+
+        <div>
           <AssetsTable />
         </div>
       </>
