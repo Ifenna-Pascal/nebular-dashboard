@@ -1,7 +1,7 @@
-import Image from "next/image";
-import { marketData } from "../__mockdata__/market";
+import Image from 'next/image';
+import { marketData } from '../__mockdata__/market';
 import { assets } from '@/assets';
-import Table from "../../app/components/tables/MarketTable";
+import Table from '../../app/components/tables/MarketTable';
 import Button from '@/app/ui/button';
 
 const MarketHome = () => {
@@ -11,10 +11,10 @@ const MarketHome = () => {
         <div className="  flex flex-col  my-auto  ">
           <div className="py-0 md:py-4 lg:py-6 xl:py-8 ">
             <h1 className="block lg:hidden text-bold text-[14px]/[20px] md:text-[28px]/[40px] lg:text-[34px]/[20px] text-white font-sora font-regular">
-              Markets{" "}
+              Markets{' '}
             </h1>
             <h1 className="text-bold text-[24px]/[30px] md:text-[34px]/[30px] mt-1 xl:mt-4 lg:text-[48px]/[80px] xl:text-[64px]/[80px] text-[#01F8AF] font-sora font-bold">
-              Biturbo Market{" "}
+              Biturbo Market{' '}
             </h1>
           </div>
           <div className="hidden lg:flex justify-between  items-center">
@@ -115,10 +115,7 @@ const MarketHome = () => {
               </div>
             </div>
 
-            <Button
-              
-              styles="w-[110px] md:w-[130px] lg:w-[190px] h-[30px] md:h-[35px] lg:h-[45px] bg-[#FFFFFF0D]  border border-white border-opacity-30 text-[8px] md:text-[10px] lg:text-[15px]"
-            >
+            <Button styles="w-[110px] md:w-[130px] lg:w-[190px] h-[30px] md:h-[35px] lg:h-[45px] bg-[#FFFFFF0D]  border border-white border-opacity-30 text-[8px] md:text-[10px] lg:text-[15px]">
               View Transactions
             </Button>
           </div>

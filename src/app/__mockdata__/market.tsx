@@ -2,26 +2,25 @@
 
 export const marketData = [
   {
-    title: "Total Market Size",
-    amount: "10.54B",
-    sign: "$",
+    title: 'Total Market Size',
+    amount: '10.54B',
+    sign: '$',
   },
   {
-    title: "Total Available",
-    amount: "5.64B",
-    sign: "$",
+    title: 'Total Available',
+    amount: '5.64B',
+    sign: '$',
   },
   {
-    title: "Total Borrows",
-    amount: "3.19B",
-    sign: "$",
+    title: 'Total Borrows',
+    amount: '3.19B',
+    sign: '$',
   },
   {
-    title: "Collateralization",
-    amount: "133.19%",
+    title: 'Collateralization',
+    amount: '133.19%',
   },
 ];
-
 
 // export const features = [
 //   {

@@ -1,23 +1,20 @@
-import Image from "next/image";
-import { marketData } from "../../__mockdata__/market";
+import Image from 'next/image';
+import { marketData } from '../../__mockdata__/market';
 import { assets } from '@/assets';
-import { GoArrowLeft } from "react-icons/go";
+import { GoArrowLeft } from 'react-icons/go';
 import Button from '@/app/ui/button';
 
-import MarketDetailsTable from "@/app/components/tables/MarketDetailsTable";
+import MarketDetailsTable from '@/app/components/tables/MarketDetailsTable';
 
 const MarketDetailsPage = ({ params }: { params: any }) => {
   const marketId = params?.id;
-  console.log(marketId, "this is the id needed");
+  console.log(marketId, 'this is the id needed');
   return (
     <div className="max-w-[2000px] mx-auto h-[220vh] md:h-[170vh] lg:h-[80vh] xl:h-[160vh]">
       <div className=" px-4 md:px-10   bg-[#02120D] font-sora h-[193px] md:h-[280px] lg:h-[250px] xl:h-[300px]   py-[1rem] md:py-[0.5rem]   ">
         <div className="  flex flex-col  my-auto  ">
           <div className="py-0 md:py-10 flex flex-col md:flex-row gap-3 items-left md:items-center ">
-            <Button
-            
-              styles="w-[60px] md:w-[90px] lg:w-[120px] xl:w-[148px] h-[20px] font-sora font-light md:h-[35px] text-white text-opacity-50 border border-white border-opacity-40 lg:h-[45px] xl:h-[57px] text-[5px]/[10px] md:text-[10px] bg-transparent lg:text-[14px] xl:text-[18px]/[27px] rounded-[5px]"
-            >
+            <Button styles="w-[60px] md:w-[90px] lg:w-[120px] xl:w-[148px] h-[20px] font-sora font-light md:h-[35px] text-white text-opacity-50 border border-white border-opacity-40 lg:h-[45px] xl:h-[57px] text-[5px]/[10px] md:text-[10px] bg-transparent lg:text-[14px] xl:text-[18px]/[27px] rounded-[5px]">
               <GoArrowLeft /> Go Back
             </Button>
             <div className="flex items-center gap-2 ml-0 md:ml-2 ">
@@ -33,7 +30,7 @@ const MarketDetailsPage = ({ params }: { params: any }) => {
               </h1>
 
               <Image
-                  src={assets?.ethIcon}
+                src={assets?.ethIcon}
                 width={14}
                 height={14}
                 alt="search-icon"

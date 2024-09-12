@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { wallets } from "../../__mockdata__/tables";
+import Image from 'next/image';
+import { wallets } from '../../__mockdata__/tables';
 import { assets } from '@/assets';
 
 interface IProp {

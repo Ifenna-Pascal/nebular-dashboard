@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { Fragment, useRef } from "react";
+import { Fragment, useRef } from 'react';
 import {
   Dialog,
   DialogPanel,
   Transition,
   TransitionChild,
-} from "@headlessui/react";
+} from '@headlessui/react';
 
 type IProps = {
   open: boolean;
@@ -33,7 +33,7 @@ export default function ModalContainer({ open, close, children }: IProps) {
 
         <div className="fixed inset-0 overflow-y-auto">
           <div
-            className={`flex items-center justify-center ${"min-h-full  p-0"} text-center lg:p-4`}
+            className={`flex items-center justify-center ${'min-h-full  p-0'} text-center lg:p-4`}
           >
             <TransitionChild
               as={Fragment}

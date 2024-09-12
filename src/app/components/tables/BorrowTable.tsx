@@ -1,15 +1,12 @@
-import Image from "next/image";
-import { supplyTable } from "../../__mockdata__/tables";
-import { assets} from "@/assets";
-import Button from "@/app/ui/button";
-
+import Image from 'next/image';
+import { supplyTable } from '../../__mockdata__/tables';
+import { assets } from '@/assets';
+import Button from '@/app/ui/button';
 
 const BorrowTable = () => {
   return (
     <div className=" py-6 lg:overflow-x-auto ">
-      
       <div className="border border-[#3b3c3c] bg-[#030D0A] shadow-md min-h-[400px] rounded-[10px] ">
-       
         <div className="hidden lg:block">
           <table className=" min-w-full divide-y font-sora  divide-[#FFFFFF1A] ">
             <thead className="bg-transparent">
@@ -119,7 +116,7 @@ const BorrowTable = () => {
                       </button>
                     </td>
                     <td className="lg:text-[8px]/[11px] xl:text-[10px]/[13px] lg:px-1 xl:px-6 py-7 pl-12 font-sora text-white text-opacity-60   ">
-                      {" "}
+                      {' '}
                       <button className="bg-[#FFFFFF0D] lg:w-[45px] h-[20px] xl:w-[55px] xl:h-[23px]  rounded-[3px] border border-white border-opacity-30 ">
                         {data.details}
                       </button>

@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import { assets } from '@/assets';
 import Image from 'next/image';
 import React, { useState } from 'react';
@@ -11,10 +11,9 @@ import WalletConnectModal from '@/app/components/modal/connect-modal';
 import ModalContainer from '@/app/components/modal';
 
 const BalanceOverview = () => {
-
   const [open, setOpen] = useState(false);
   const [walletConnected, setWalletConnected] = useState(false);
-  const [activeTab, setActiveTab] = useState("supply");
+  const [activeTab, setActiveTab] = useState('supply');
 
   const closeModal = () => setOpen(false);
 
@@ -23,7 +22,7 @@ const BalanceOverview = () => {
     closeModal();
   };
 
-  const handleTabChange = (tab: "supply" | "borrow") => {
+  const handleTabChange = (tab: 'supply' | 'borrow') => {
     setActiveTab(tab);
   };
 
@@ -66,20 +65,20 @@ const BalanceOverview = () => {
         <div className="lg:hidden flex flex-col bg-[#01291D] pt-5 px-4 md:px-10">
           <div className="flex justify-between bg-[#012016] w-full md:w-[680px] h-[39px] mx-auto shadow-lg">
             <button
-              className={`${activeTab === "supply" ? "bg-[#01F8AF] text-[#012016] w-full md:w-[341px]" : "bg-[#012016] w-full md:w-[339px] text-[#01F8AF]"} rounded-[3px]`}
-              onClick={() => handleTabChange("supply")}
+              className={`${activeTab === 'supply' ? 'bg-[#01F8AF] text-[#012016] w-full md:w-[341px]' : 'bg-[#012016] w-full md:w-[339px] text-[#01F8AF]'} rounded-[3px]`}
+              onClick={() => handleTabChange('supply')}
             >
               Supply
             </button>
             <button
-              className={`${activeTab === "borrow" ? "bg-[#01F8AF] text-[#012016] w-full md:w-[341px]" : "bg-[#012016] w-full md:w-[339px] text-[#01F8AF]"} rounded-[3px]`}
-              onClick={() => handleTabChange("borrow")}
+              className={`${activeTab === 'borrow' ? 'bg-[#01F8AF] text-[#012016] w-full md:w-[341px]' : 'bg-[#012016] w-full md:w-[339px] text-[#01F8AF]'} rounded-[3px]`}
+              onClick={() => handleTabChange('borrow')}
             >
               Borrow
             </button>
           </div>
           <div className="mt-4">
-            {activeTab === "supply" ? <SupplyTable /> : <BorrowTable />}
+            {activeTab === 'supply' ? <SupplyTable /> : <BorrowTable />}
           </div>
         </div>
         <div className="hidden lg:flex justify-between gap-2 lg:gap-7 xl:gap-14 bg-[#01291D] px-4 md:px-10 mx-auto">
@@ -127,8 +126,6 @@ const BalanceOverview = () => {
       </ModalContainer>
     </div>
   );
-
-
 };
 
 export default BalanceOverview;

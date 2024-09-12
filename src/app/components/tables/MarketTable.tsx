@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { marketTable } from "../../__mockdata__/tables";
+import Image from 'next/image';
+import { marketTable } from '../../__mockdata__/tables';
 import { assets } from '@/assets';
-import { useRouter } from "next/navigation";
+import { useRouter } from 'next/navigation';
 
 const Table = () => {
   const router = useRouter();
@@ -33,11 +33,11 @@ const Table = () => {
             <thead className="bg-transparent">
               <tr className="h-[85px]">
                 {[
-                  "Assets",
-                  "Total Supplied",
-                  "Supply APY",
-                  "Total Borrowed",
-                  "Borrow APY, Variable",
+                  'Assets',
+                  'Total Supplied',
+                  'Supply APY',
+                  'Total Borrowed',
+                  'Borrow APY, Variable',
                 ].map((header, index) => (
                   <th
                     key={index}
@@ -118,10 +118,10 @@ const Table = () => {
                 </span>
               </div>
               {[
-                { label: "Total Supplied", value: data.collateral },
-                { label: "Supply APY", value: data.tvl },
-                { label: "Total Borrowed", value: data.mcr },
-                { label: "Borrow APY, Variable", value: data.apr },
+                { label: 'Total Supplied', value: data.collateral },
+                { label: 'Supply APY', value: data.tvl },
+                { label: 'Total Borrowed', value: data.mcr },
+                { label: 'Borrow APY, Variable', value: data.apr },
               ].map((item, index) => (
                 <div
                   key={index}

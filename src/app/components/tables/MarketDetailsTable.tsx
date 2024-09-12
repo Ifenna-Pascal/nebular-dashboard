@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { marketTable } from "../../__mockdata__/tables";
+import Image from 'next/image';
+import { marketTable } from '../../__mockdata__/tables';
 import { assets } from '@/assets';
 import {
   LineChart,
@@ -10,18 +10,18 @@ import {
   XAxis,
   YAxis,
   ResponsiveContainer,
-} from "recharts";
+} from 'recharts';
 import Button from '@/app/ui/button';
-import { useState } from "react";
+import { useState } from 'react';
 // import Matic from "../marketdetails-component/Matic";
 // import MaticEth from "../marketdetails-component/MaticEth";
 
 const data = [
-  { name: "July 8", uv: 8 },
-  { name: "July 12", uv: 8 },
-  { name: "July 14", uv: 4 },
-  { name: "July 20", uv: 2 },
-  { name: "July 22", uv: 0 },
+  { name: 'July 8', uv: 8 },
+  { name: 'July 12', uv: 8 },
+  { name: 'July 14', uv: 4 },
+  { name: 'July 20', uv: 2 },
+  { name: 'July 22', uv: 0 },
 ];
 
 const MarketDetailsTable = () => {
@@ -34,9 +34,9 @@ const MarketDetailsTable = () => {
       </text>
     );
   };
-  const [activeTab, setActiveTab] = useState("matic");
+  const [activeTab, setActiveTab] = useState('matic');
 
-  const handleTabChange = (tab: "matic" | "maticEth") => {
+  const handleTabChange = (tab: 'matic' | 'maticEth') => {
     setActiveTab(tab);
   };
   return (
