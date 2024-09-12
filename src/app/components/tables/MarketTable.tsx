@@ -10,7 +10,7 @@ const Table = () => {
 
   return (
     <div className="overflow-x-auto px-4 md:px-10  ">
-      <div className="border border-[#302E2E] bg-gradient-to-b from-[#0303033B] to-[#31324282] shadow-md min-h-[400px] rounded-lg px-8">
+      <div className="border border-[#302E2E] bg-gradient-to-b from-[#0303033B] to-[#31324282] shadow-md min-h-[400px] rounded-lg px-5 md:px-8">
         <div className="flex flex-row items-center justify-between px-4 lg:px-6 border-b border-[#302E2E] pb-5">
           <h3 className="text-white mt-6 text-[14px] md:text-[25px] xl:text-[30px] font-montserrat font-semibold">
             Market
@@ -61,7 +61,7 @@ const Table = () => {
                 ))}
               </tr>
             </thead>
-            <tbody className=''>
+            <tbody className="">
               {marketTable.map((data, index) => (
                 <tr
                   key={index}

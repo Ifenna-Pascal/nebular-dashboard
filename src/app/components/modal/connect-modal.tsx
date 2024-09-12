@@ -37,13 +37,13 @@ const WalletConnectModal = ({
   onWalletSelect: () => void;
 }) => {
   return (
-    <div className="border border-[#FFFFFF66] min-h-[300px]  rounded-[30px] lg:rounded-[50px]  mx-auto  lg:w-[550px]  px-0 md:px-0 bg-[#FFFFFF]">
+    <div className="border border-[#FFFFFF66] max-h-[800px]  rounded-[30px] lg:rounded-[50px]  mx-auto w-[88%]  lg:w-[550px]  px-0 md:px-0 bg-[#FFFFFF]">
       <div className="w-full py-1 lg:py-4 relative">
         <MdOutlineCancel
           onClick={close}
           className="absolute cursor-pointer top-5 lg:top-10 right-10 text-[20px] lg:text-[40px] font-light text-[#00000080] text-opacity-50"
         />
-        <div className="flex items-center justify-center mt-10 lg:mt-20 gap-1">
+        <div className="flex items-center justify-center mt-10 lg:mt-10 gap-1">
           <Image
             src={assets.wallet}
             alt="wallet-icon"
