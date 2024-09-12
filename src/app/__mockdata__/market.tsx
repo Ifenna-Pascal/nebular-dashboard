@@ -1,4 +1,3 @@
-// import { images } from "../utilities/images";
 
 import { assets } from '@/assets';
 

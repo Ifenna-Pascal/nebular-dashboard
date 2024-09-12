@@ -1,5 +1,3 @@
-
-
 'use client';
 
 import Image from 'next/image';
@@ -7,7 +5,7 @@ import { marketTable } from '../../__mockdata__/tables';
 import { assets } from '@/assets';
 import { useRouter } from 'next/navigation';
 
-const Table = () => {
+const  Table = () => {
   const router = useRouter();
 
   return (
@@ -66,10 +64,10 @@ const Table = () => {
               {marketTable.map((data, index) => (
                 <tr
                   key={index}
-                  className="bg-[#FFFFFF] bg-opacity-5 rounded-[10px] hover:bg-[#FFFFFF] hover:bg-opacity-10 cursor-pointer text-white"
+                  className="bg-[#FFFFFF] bg-opacity-5 rounded-[10px]  hover:bg-[#FFFFFF] hover:bg-opacity-10 cursor-pointer text-white"
                   onClick={() => router.push(`/market/${index}`)}
                 >
-                  <td className="px-3 lg:px-6 py-5 flex items-center">
+                  <td className="px-3 lg:px-6 mt-2 flex items-center">
                     <Image
                       src={assets.usdtIcon}
                       alt="coin-icon"
@@ -90,7 +88,7 @@ const Table = () => {
                   <td className="px-6 py-5 text-[8px] md:text-[14px] font-montserrat xl:text-[18px]">
                     {data.mcr}
                   </td>
-                  <td className= "  lg:ml-0 px-6 py-5 text-[8px] md:text-[14px] font-montserrat xl:text-[18px]">
+                  <td className="  lg:ml-0 px-6 py-5 text-[8px] md:text-[14px] font-montserrat xl:text-[18px]">
                     {data.apr}
                   </td>
                   <td className="px-6 py-5 text-center">

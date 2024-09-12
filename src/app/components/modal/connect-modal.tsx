@@ -12,7 +12,7 @@ interface IProp {
 const Wallet = ({ img, name, onClick }: IProp) => {
   return (
     <div
-      className="mb-4 lg py-1 lg:py-2 cursor-pointer px-3 flex items-center gap-3 mt-6 bg-[#0000000D] bg-opacity-5 rounded-[15px] shadow-sm max-w-[70%] mx-auto"
+      className="mb-4 lg py-1 lg:py-2 cursor-pointer px-3 flex items-center gap-3 mt-6 bg-[#0000000D] bg-opacity-5 rounded-[15px] shadow-sm max-w-[85%] mx-auto"
       onClick={onClick}
     >
       <Image
@@ -20,9 +20,9 @@ const Wallet = ({ img, name, onClick }: IProp) => {
         alt="wallet-icon"
         width={45}
         height={45}
-        className="w-[30px] md:w-[50px] h-[50px]"
+        className="w-[30px] md:w-[40px] h-[40px]"
       />
-      <span className="text-[#000000] text-opacity-90 text-[11px] md:text-[15px] lg:text-[22px] xl:text-[24px]/[45px] py-3  text-center font-montserrat">
+      <span className="text-[#000000] text-opacity-90 text-[11px] md:text-[15px] lg:text-[`8px] xl:text-[18px]/[45px] py-3  text-center font-montserrat">
         {name}
       </span>
     </div>
@@ -37,18 +37,18 @@ const WalletConnectModal = ({
   onWalletSelect: () => void;
 }) => {
   return (
-    <div className="border border-[#FFFFFF66] min-h-[300px]  rounded-[30px] lg:rounded-[50px] w-[88%] mx-auto md:w-[80%] lg:w-[550px] xl:w-[700px]  px-0 md:px-0 bg-[#FFFFFF]">
+    <div className="border border-[#FFFFFF66] min-h-[300px]  rounded-[30px] lg:rounded-[50px]  mx-auto  lg:w-[550px]  px-0 md:px-0 bg-[#FFFFFF]">
       <div className="w-full py-1 lg:py-4 relative">
-        <MdOutlineCancel className="absolute top-5 lg:top-10 right-20 text-[20px] lg:text-[40px] font-light text-[#00000080] text-opacity-50" />
+        <MdOutlineCancel  onClick={close} className="absolute cursor-pointer top-5 lg:top-10 right-10 text-[20px] lg:text-[40px] font-light text-[#00000080] text-opacity-50" />
         <div className="flex items-center justify-center mt-10 lg:mt-20 gap-1">
           <Image
             src={assets.wallet}
             alt="wallet-icon"
             width={10}
             height={10}
-            className="w-5 lg:w-8"
+            className="w-5 lg:w-5"
           />
-          <h2 className="font-montserrat text-[13px] md:text-[20px] lg:text-[38px] leading-5 xl:text-[33px]/[54px]  text-[#5457DC] text-center font-medium">
+          <h2 className="font-montserrat text-[13px] md:text-[20px] lg:text-[38px] leading-5 xl:text-[30px]/[54px]  text-[#5457DC] text-center font-medium">
             Connect Wallet
           </h2>
         </div>

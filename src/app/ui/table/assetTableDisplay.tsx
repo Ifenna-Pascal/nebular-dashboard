@@ -25,19 +25,19 @@ const AssetTableDisplay: FC<IAssetTable> = ({
                 <th
                   key={index}
                   scope="col"
-                  className=" text-center text-[14px] md:text-[18px]/[21px]  text-light-200 font-semibold"
+                  className=" text-center text-[14px] md:text-[14px]/[21px]  text-light-200 font-semibold"
                 >
                   <div
                     className={`flex ${index === 0 ? 'justify-start' : 'justify-center'} items-center`}
                   >
-                    <span className="text-light-60 text-center font-montserrat text-[14px] font-semibold">
+                    <span className="text-light-60 text-center font-montserrat text-[13px]  font-semibold">
                       {title}
                     </span>
                     {title !== '' && (
                       <Image
                         src={assets.sortIcon}
                         className="ml-2 hidden md:flex  w-[10px] h-[10px]"
-                        alt="sort-icon"
+                        alt="sort-icon" 
                         width={10}
                       />
                     )}
@@ -49,12 +49,12 @@ const AssetTableDisplay: FC<IAssetTable> = ({
           <tbody>
             {data.map((info, index) => (
               <tr
-                className="h-[65px] hover:bg-light-10 pl-2 md:pl-8 cursor-pointer mb-4 hover:rounded-[18px]"
+                className="h-[65px] hover:bg-light-10 pl-2 md:pl-4 cursor-pointer mb-4 hover:rounded-[18px]"
                 key={index}
               >
                 <td
                   scope="col"
-                  className="pr-6 pl-4 py-5  text-center text-[18px]/[21px]  text-light-200 font-semibold"
+                  className="pr-6 pl-2 py-5  text-center text-[18px]/[21px]  text-light-200 font-semibold"
                 >
                   <div className="flex items-center">
                     <Image

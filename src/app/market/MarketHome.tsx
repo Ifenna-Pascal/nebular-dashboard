@@ -2,13 +2,12 @@ import Image from 'next/image';
 import { marketData } from '../__mockdata__/market';
 import { assets } from '@/assets';
 import Table from '../../app/components/tables/MarketTable';
-import Button from '@/app/ui/button';
 import WalletInfoCardApy from '../sections/home/walletInfoCardApy';
 
 const MarketHome = () => {
   return (
     <div className="max-w-[2000px] mx-auto">
-      <div className=" px-4 md:px-10    font-sora h-[270px] md:h-[255px] lg:h-[255px] xl:h-[300px]   py-[1rem] md:py-[0.5rem]   ">
+      <div className=" px-4 md:px-10  h-[270px] md:h-[255px] lg:h-[255px] xl:h-[300px]   py-[1rem] md:py-[0.5rem]   ">
         <div className="  flex flex-col  my-auto py-3  lg:py-10">
           <h1 className="lg:hidden font-montserrat text-[14px]/[17px] text-white text-opacity-80 font-bold">
             Market

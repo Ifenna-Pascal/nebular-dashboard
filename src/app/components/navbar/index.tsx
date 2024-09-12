@@ -7,15 +7,26 @@ import NavLink from './navLink';
 import { usePathname } from 'next/navigation';
 import Button from '@/app/ui/button';
 import Link from 'next/link';
+import WalletConnectModal from '../modal/connect-modal';
+import ModalContainer from '../modal';
 
 const NavBar = () => {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [modal, setModal] = useState(false);
+  const [walletConnected, setWalletConnected] = useState(false);
 
-  const toggle = () => setOpen(!open);
+  console.log(walletConnected);
+  
+  const closeModal = () => setOpen(false);
+  const handleWalletSelect = () => {
+    setWalletConnected(true);
+    closeModal();
+  };
+  const toggle = () => setOpen(!open);  
 
   return (
-    <div className="bg-dark-200 sticky">
+    <div className="bg-dark-200 top-0 sticky">
       <div className="border-b border-light-50 flex px-6 lg:px-12 items-center justify-between top-0 h-[75px]">
         <div className="flex items-center justify-between">
           <Link href={'/'}>
@@ -55,7 +66,7 @@ const NavBar = () => {
               className="w-[15px] lg:w-[18px]"
             />
           </Button>
-          <Button styles="bg-primary-gradient lg:flex hidden items-center justify-center  font-inter text-[14px] font-semibold text-white w-[160px] h-[43px] rounded-[80px]">
+          <Button onClick={() => setModal(true)} styles="bg-primary-gradient lg:flex hidden items-center justify-center  font-inter text-[14px] font-semibold text-white w-[160px] h-[43px] rounded-[80px]">
             Connect Wallet
           </Button>
           <Image
@@ -87,6 +98,13 @@ const NavBar = () => {
           ))}
         </div>
       )}
+      
+        <ModalContainer open={modal} close={closeModal}>
+        <WalletConnectModal
+          close={() => setModal(false)}
+          onWalletSelect={handleWalletSelect}
+        />
+      </ModalContainer>
     </div>
   );
 };
