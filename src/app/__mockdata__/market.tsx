@@ -34,6 +34,4 @@ export const singleMarketData = [
     title: 'Total Supply',
     amount: '$3.66k',
   },
- 
 ];
-

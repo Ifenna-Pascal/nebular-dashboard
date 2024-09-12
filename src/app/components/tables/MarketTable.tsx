@@ -61,7 +61,7 @@ const Table = () => {
                 ))}
               </tr>
             </thead>
-            <tbody className=''>
+            <tbody className="">
               {marketTable.map((data, index) => (
                 <tr
                   key={index}

@@ -47,8 +47,6 @@
   align-items: center;
 }
 
-
-
 .progress-circle-background,
 .progress-circle-progress {
   fill: none;
@@ -56,18 +54,17 @@
 }
 
 .progress-circle-background {
-  stroke: #5457DC66;
+  stroke: #5457dc66;
 }
 
 .progress-circle-progress {
-  stroke: #5457DC;
+  stroke: #5457dc;
   transition: stroke-dashoffset 0.5s ease-in-out;
 }
 
 .progress-circle-text {
   font-size: 14px;
-  fill: #FFF;
+  fill: #fff;
 
   font-family: Arial, sans-serif;
 }
-

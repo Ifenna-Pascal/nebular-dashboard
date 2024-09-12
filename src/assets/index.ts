@@ -18,7 +18,7 @@ import wallet from './icons/wallet.svg';
 import herobg from './images/herobg.svg';
 import searchIcon from './icons/search-icon.svg';
 import caution from './icons/caution.svg';
-import dot from './icons/dot.svg'
+import dot from './icons/dot.svg';
 
 export const assets = {
   logo,

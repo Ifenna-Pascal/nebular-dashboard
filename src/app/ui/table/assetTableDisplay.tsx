@@ -90,11 +90,11 @@ const AssetTableDisplay: FC<IAssetTable> = ({
                   scope="col"
                   className="pr-6 pl-6 py-5  text-center text-[18px]/[21px]  text-light-200 font-semibold"
                 >
-                 <Link href={`/market/${index}`}>
-                 <Button styles="bg-[#5356E033] border border-light-50 font-normal font-montserrat text-[13px] rounded-[5px] h-[35px] w-[83px] text-light-60">
-                    Details
-                  </Button>
-                 </Link>
+                  <Link href={`/market/${index}`}>
+                    <Button styles="bg-[#5356E033] border border-light-50 font-normal font-montserrat text-[13px] rounded-[5px] h-[35px] w-[83px] text-light-60">
+                      Details
+                    </Button>
+                  </Link>
                 </td>
               </tr>
             ))}

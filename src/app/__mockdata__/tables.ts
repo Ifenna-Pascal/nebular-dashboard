@@ -8,7 +8,7 @@ export const marketTable = [
     tvl: '2.4%',
     mcr: '$513.854',
     apr: '9.50%',
-    tbr: '$734.47'
+    tbr: '$734.47',
   },
   {
     icon: assets.ethIcon,
@@ -17,7 +17,7 @@ export const marketTable = [
     tvl: '2.4%',
     mcr: '$513.854',
     apr: '9.50%',
-    tbr: '$734.47'
+    tbr: '$734.47',
   },
   {
     icon: assets.ethIcon,
@@ -26,7 +26,7 @@ export const marketTable = [
     tvl: '2.4%',
     mcr: '$513.854',
     apr: '9.50%',
-    tbr: '$734.47'
+    tbr: '$734.47',
   },
   {
     icon: assets.ethIcon,
@@ -35,7 +35,7 @@ export const marketTable = [
     tvl: '2.4%',
     mcr: '$513.854',
     apr: '9.50%',
-    tbr: '$734.47'
+    tbr: '$734.47',
   },
   {
     icon: assets.ethIcon,
@@ -44,7 +44,7 @@ export const marketTable = [
     tvl: '2.4%',
     mcr: '$513.854',
     apr: '9.50%',
-    tbr: '$734.47'
+    tbr: '$734.47',
   },
 ];
 

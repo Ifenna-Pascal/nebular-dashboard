@@ -88,7 +88,7 @@ const NavBar = () => {
           </div>{' '}
           {navLinks.map((link, index) => (
             <div
-            onClick={() => setOpen(false)}
+              onClick={() => setOpen(false)}
               key={index}
               className="border border-b py-6 px-4 border-light-50"
             >
