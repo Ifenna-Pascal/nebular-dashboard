@@ -6,9 +6,9 @@ import WalletInfoCardApy from './walletInfoCardApy';
 
 const BalanceOverview = () => {
   return (
-    <div className="p-12">
+    <div className="p-4 lg:p-12">
       <div className="flex items-center">
-        <h1 className="font-montserrat text-[48px] text-white font-bold">
+        <h1 className="font-montserrat text-[24px] lg:text-[48px] text-white font-bold">
           Ethereum
         </h1>
         <Image
@@ -18,15 +18,16 @@ const BalanceOverview = () => {
           className="w-[15px] cursor-pointer ml-2 mt-2"
         />
       </div>
-      <div className="mt-10 flex w-full justify-between items-center">
-        <WalletInfoCard styles="lg:h-[86px]" text="Supply ETH" value="3" />
-        <WalletInfoCard styles="lg:h-[86px]" text="Borrow ETH" value="2" />
+      <div className="mt-6 md:mt-10 flex-col md:flex md:flex-row w-full justify-between items-center">
+        <WalletInfoCard styles="h-[86px] mb-4" text="Supply ETH" value="3" />
+        <WalletInfoCard styles="h-[86px]" text="Borrow ETH" value="2" />
       </div>
-      <div className="mt-6 flex w-full justify-between items-center">
+      <div className="mt-6 flex md:flex-row flex-col w-full justify-between md:items-center">
         <WalletInfoCardApy
           apy="-------"
           text="Your Suppply Balance"
           value="0.00"
+          styles='mb-4'
         />
         <WalletInfoCardApy
           apy="-------"

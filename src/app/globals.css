@@ -12,12 +12,10 @@
 }
 
 @layer utilities {
-
   .circle {
     width: 90%;
     height: 60px;
-    background: linear-gradient(to right, #5356E0, #6868AE);
+    background: linear-gradient(to right, #5356e0, #6868ae);
     filter: blur(150px);
   }
-
 }

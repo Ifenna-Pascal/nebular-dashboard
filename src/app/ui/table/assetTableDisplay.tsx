@@ -12,9 +12,9 @@ const AssetTableDisplay: FC<IAssetTable> = ({
 }) => {
   return (
     <div
-      className={`border border-[#302E2E] bg-table-gradient p-6  rounded-[20px] min-h-[200px] ${styles}`}
+      className={`border border-[#302E2E] bg-table-gradient p-3 md:p-6  md:rounded-[20px] min-h-[200px] ${styles}`}
     >
-      <h1 className="text-white font-montserrat font-semibold text-[18px] border-b border-[#302E2E] pb-5">
+      <h1 className="text-white font-montserrat font-semibold text-[14px] smd:text-[18px] border-b border-[#302E2E] pb-3 md:pb-5">
         {header}
       </h1>
       <div className="overflow-x-auto">
@@ -24,8 +24,8 @@ const AssetTableDisplay: FC<IAssetTable> = ({
               {colmumHeads.map((title, index) => (
                 <th
                   key={index}
-                  scope="col"
-                  className=" text-center text-[18px]/[21px]  text-light-200 font-semibold"
+                  scope="col"   
+                  className=" text-center text-[14px] md:text-[18px]/[21px]  text-light-200 font-semibold"
                 >
                   <div
                     className={`flex ${index === 0 ? 'justify-start' : 'justify-center'} items-center`}
@@ -36,7 +36,7 @@ const AssetTableDisplay: FC<IAssetTable> = ({
                     {title !== '' && (
                       <Image
                         src={assets.sortIcon}
-                        className="ml-2 w-[10px] h-[10px]"
+                        className="ml-2 hidden md:flex  w-[10px] h-[10px]"
                         alt="sort-icon"
                         width={10}
                       />
@@ -49,7 +49,7 @@ const AssetTableDisplay: FC<IAssetTable> = ({
           <tbody>
             {data.map((info, index) => (
               <tr
-                className="h-[65px] hover:bg-light-10 pl-8 cursor-pointer mb-4 hover:rounded-[18px]"
+                className="h-[65px] hover:bg-light-10 pl-2 md:pl-8 cursor-pointer mb-4 hover:rounded-[18px]"
                 key={index}
               >
                 <td

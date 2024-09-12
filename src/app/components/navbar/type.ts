@@ -1,5 +1,4 @@
-
-export interface ILink  {
+export interface ILink {
   name: string;
   href: string;
   isActive: boolean;

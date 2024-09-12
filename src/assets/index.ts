@@ -6,12 +6,15 @@ import arrowDownIcon from './icons/arrow-down.svg';
 import ethIcon from './icons/eth-icon.svg';
 import sortIcon from '../assets/icons/sort-icon.svg';
 import usdtIcon from './icons/usdt.svg';
-import handburgerIcon from './icons/menu-bar.svg'
-
+import onSwitch from './images/on.svg';
+import offSwitch from './images/off.svg';
+import handburgerIcon from './icons/menu-bar.svg';
 export const assets = {
   logo,
   usdtIcon,
   sortIcon,
+  onSwitch,
+  offSwitch,
   handburgerIcon,
   arrowDownIcon,
   logoMark,

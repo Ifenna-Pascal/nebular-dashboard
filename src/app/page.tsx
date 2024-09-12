@@ -3,7 +3,7 @@ import BalanceOverview from './sections/home/balance-overview';
 
 export default function Home() {
   return (
-    <div className='hidden lg:flex flex-coln'>
+    <div className="flex flex-col"> 
       <BalanceOverview />
       <AssetsTable />
     </div>
