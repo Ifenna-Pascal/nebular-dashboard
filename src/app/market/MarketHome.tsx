@@ -35,7 +35,7 @@ const MarketHome = () => {
                     <h3 className="font-montserrat text-[6px] md:text-[10px] text-[#FFFFFF] lg:text-[12px] xl:text-[16px]/[24px]">
                       {data.title}
                     </h3>
-                    <h6 className="font-montserrat text-[8px] text-[#FFFFFF] text-opacity-70 font-medium md:text-[10px] lg:text-[14px] xl:text-[24px]/[36px]">
+                    <h6 className="font-montserrat text-[8px] text-[#FFFFFF] mt-1  text-opacity-70 font-medium md:text-[10px] lg:text-[14px] xl:text-[24px]/[36px]">
                       {data.amount}
                     </h6>
                   </div>
