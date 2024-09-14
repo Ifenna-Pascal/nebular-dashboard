@@ -32,7 +32,7 @@ const Table = () => {
         </div>
 
         <div className="overflow-auto ">
-          <table className="min-w-[700px]  lg:min-w-full mt-0 lg:mt-4 border-separate border-spacing-y-6">
+          <table className="min-w-[700px]  lg:min-w-full mt-0 lg:mt-4 border-separate border-spacing-y-3 md:border-spacing-y-6">
             <thead className="">
               <tr className="h-[45px] lg:h-[85px] mt-4 lg:mt-0 flex items-center justify-between px-4  ">
                 {[
