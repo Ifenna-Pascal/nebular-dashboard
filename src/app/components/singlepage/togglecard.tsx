@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Card from './card';
 
-
 const ToggleCard: React.FC = () => {
   const [isSupply, setIsSupply] = useState(true);
 
@@ -10,7 +9,7 @@ const ToggleCard: React.FC = () => {
   };
 
   const handleButtonClick = () => {
-    console.log("button clicked")
+    console.log('button clicked');
   };
 
   return (

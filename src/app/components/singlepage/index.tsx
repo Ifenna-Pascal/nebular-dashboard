@@ -1,20 +1,18 @@
-
 import React from 'react';
-import Image from 'next/image'; 
+import Image from 'next/image';
 import ProgressBar from '@/app/components/progressbar/index';
- import { assets } from '@/assets';
+import { assets } from '@/assets';
 
-
-
-
- // SupplyInfo Component
+// SupplyInfo Component
 interface SupplyInfoProps {
   cautionIcon: string;
   text: string;
 }
 
-
-export const SupplyInfo: React.FC<SupplyInfoProps> = ({ cautionIcon, text }) => (
+export const SupplyInfo: React.FC<SupplyInfoProps> = ({
+  cautionIcon,
+  text,
+}) => (
   <div className="flex gap-2 text-white justify-start items-center md:justify-start px-2 md:px-6 mt-5">
     <p className="text-[12px] lg:text-[20px]/[24px] font-montserrat text-center md:text-left font-regular text-gray-400">
       {text}
@@ -29,7 +27,6 @@ export const SupplyInfo: React.FC<SupplyInfoProps> = ({ cautionIcon, text }) => 
   </div>
 );
 
-
 // ProgressWithDetails Component
 interface ProgressWithDetailsProps {
   progress: number;
@@ -37,7 +34,6 @@ interface ProgressWithDetailsProps {
   suppliedText: string;
   warningIcon: string;
 }
-
 
 export const ProgressWithDetails: React.FC<ProgressWithDetailsProps> = ({
   progress,
@@ -76,10 +72,16 @@ interface MarketDetailsProps {
   amount: string;
 }
 
-
-export const MarketDetails: React.FC<MarketDetailsProps> = ({ title, amount }) => (
-  <div className='flex justify-between  items-center mt-6  font-montserrat'>
-    <p className='text-white text-opacity-70 text-[10px]/[12px] lg:text-[18px]/[21px] font-medium '>{title}</p>
-   <p className='text-white text-opacity-70 text-[10px]/[12px] lg:text-[18px]/[21px] font-normal '>{amount}</p>
+export const MarketDetails: React.FC<MarketDetailsProps> = ({
+  title,
+  amount,
+}) => (
+  <div className="flex justify-between  items-center mt-6  font-montserrat">
+    <p className="text-white text-opacity-70 text-[10px]/[12px] lg:text-[18px]/[21px] font-medium ">
+      {title}
+    </p>
+    <p className="text-white text-opacity-70 text-[10px]/[12px] lg:text-[18px]/[21px] font-normal ">
+      {amount}
+    </p>
   </div>
 );
