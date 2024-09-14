@@ -6,9 +6,12 @@ import { IoArrowBack } from 'react-icons/io5';
 import Button from '@/app/ui/button';
 
 import MarketDetailsTable from '@/app/components/tables/MarketDetailsTable';
+import { MarketDetails } from '@/app/components/singlepage';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const MarketDetailsPage = ({ params }: { params: any }) => {
   const marketId = params?.id;
+  console.log(marketId);
 
   return (
     <div className="max-w-[2000px] mx-auto">
@@ -61,6 +64,21 @@ const MarketDetailsPage = ({ params }: { params: any }) => {
           </div>
 
           <MarketDetailsTable />
+          <div className='w-full lg:w-1/2 xl:w-[50%] px-4 md:px-6 lg:px-10 border border-[#302E2E] bg-gradient-to-b from-[#030303] to-[#313242] py-10 rounded-[10px] -mt-10 md:mt-0'>
+            <p className='text-white text-opacity-70 text-[10px]/[12px]  font-montserrat lg:text-[18px]/[21px] font-normal'>MARKET DETAILS</p>
+
+            <div>
+            <MarketDetails  title='Price' amount='$0.99997'/> 
+            <MarketDetails  title='Market Liquidity' amount='9,885.38 USDT'/>
+            <MarketDetails  title='USDT Supply Cap' amount='No Limit'/>
+            <MarketDetails  title='USDT Borrow Cap' amount='1000000.00'/>
+            <MarketDetails  title='Collateral Factor' amount='$0.99997'/>
+            <MarketDetails  title='Collateral Cap' amount='0.00 USDT'/>
+            <MarketDetails  title='Total Collateral Tokens' amount='17.72 USDT'/>
+            <MarketDetails  title='CrUSDT Minted' amount='360,980.23 CrUSDT'/>
+            <MarketDetails  title='Exchange Rate' amount='1 USDT = 90.64 crUSDT'/>
+            </div>
+          </div>
         </div>
       </div>
     </div>
