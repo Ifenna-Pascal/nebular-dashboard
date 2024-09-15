@@ -23,6 +23,7 @@ const data = [
 
 const MarketDetailsTable = () => {
   // Custom tick component to add margin above X-axis labels
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const CustomizedAxisTick = (props: any) => {
     const { x, y, payload } = props;
     return (

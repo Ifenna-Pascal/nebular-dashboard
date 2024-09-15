@@ -1,9 +1,7 @@
 import Image from 'next/image';
 import { singleMarketData } from '../../__mockdata__/market';
 import { assets } from '@/assets';
-import { GoArrowLeft } from 'react-icons/go';
 import { IoArrowBack } from 'react-icons/io5';
-import Button from '@/app/ui/button';
 
 import MarketDetailsTable from '@/app/components/tables/MarketDetailsTable';
 import { MarketDetails } from '@/app/components/singlepage';
