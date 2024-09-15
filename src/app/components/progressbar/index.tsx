@@ -17,14 +17,14 @@ const ProgressBar = ({ progress }: { progress: number }) => {
           cx="50"
           cy="50"
           r={radius}
-          strokeWidth="10"
+          strokeWidth="5"
         />
         <circle
           className="progress-circle-progress"
           cx="50"
           cy="50"
           r={radius}
-          strokeWidth="10"
+          strokeWidth="5"
           strokeDasharray={circumference}
           strokeDashoffset={strokeDashoffset}
         />
