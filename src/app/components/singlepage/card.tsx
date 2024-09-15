@@ -9,7 +9,7 @@ interface CardProps {
   onButtonClick: () => void;
 }
 
-const Card: React.FC<CardProps> = ({ title, details, buttonLabel }) => {
+const Card: React.FC<CardProps> = ({ details, buttonLabel }) => {
   return (
     <div className="w-full px-1 lg:px-9 font-montserrat">
       <div className="flex justify-between mt-5">

@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import ProgressBar from '@/app/components/progressbar/index';
-import { assets } from '@/assets';
 
 // SupplyInfo Component
 interface SupplyInfoProps {
